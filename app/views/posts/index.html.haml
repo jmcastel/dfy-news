@@ -1,0 +1,24 @@
+
+.container 
+  .h1.text-center Mieux comprendre mon corps !
+  %br
+  %br
+  - @posts.each do |post| 
+    .col-md-12.well
+      .h1= post.title
+      %br
+      %br
+      .p 
+        = post.description
+      %br
+      %br
+      .p 
+        Catégorie
+        = post.category
+      %br
+      %br
+      = link_to 'Edit Post', edit_post_path(post)
+
+
+
+  = link_to 'New Post', new_post_path 

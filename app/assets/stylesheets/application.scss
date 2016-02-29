@@ -12,4 +12,14 @@
  *
  *= require_tree .
  *= require_self
+
  */
+
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+
+
+
+	.h1 {
+		color: #FF326E;
+	}

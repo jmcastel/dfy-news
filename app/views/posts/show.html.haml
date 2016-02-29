@@ -1,11 +1,17 @@
 %p#notice= notice
 
-.h1 
-	= @post.title
-.p 
-	= @post.description
-.p 
-	= @post.category
+.well.well-lg
+	.h1= @post.title
+	%br
+	%br
+	.p 
+		= @post.description
+	%br
+	%br
+	.p.well
+		= @post.category
+	%br
+	%br
 
 = link_to 'Edit', edit_post_path(@post)
 |

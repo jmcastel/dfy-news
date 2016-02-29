@@ -1,0 +1,31 @@
+!!!
+%html
+	%head
+		%title DfyNews
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+
+		%meta{:content => "width=device-width", :name => "viewport"}/
+		
+	%body
+		%nav.navbar.navbar-default
+			.container-fluid
+				.navbar-header
+					%button.navbar-toggle{"data-target" => "#myNavbar", "data-toggle" => "collapse", :type => "button"}
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					.navbar-brand
+						.logo= link_to (image_tag  "/assets/images/Logo.png") , root_path
+						
+
+				
+				#myNavbar.collapse.navbar-collapse
+					%ul.nav.navbar-nav.navbar-right
+						
+						%li= link_to "Analyser mes symptomes" 
+						%li= link_to "Forum"
+						
+	        
+		= yield
