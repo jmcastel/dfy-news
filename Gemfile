@@ -28,7 +28,7 @@ gem 'simple_form', '~> 3.2'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'activeadmin', github: 'activeadmin'
-
+gem 'devise', '~> 3.5', '>= 3.5.6'
 
 
 # Use ActiveModel has_secure_password
