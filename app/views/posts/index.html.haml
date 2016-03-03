@@ -1,10 +1,15 @@
 
 .container 
-  .h1.text-center Mieux comprendre mon corps !
+  %br
+  %br
+  .h1.text-center Infos santé
+  %br
+  %br
+  %hr
   %br
   %br
   - @posts.each do |post| 
-    .col-md-12.well
+    .col-md-12
       .h1= post.title
       %br
       %br
@@ -17,6 +22,7 @@
         = post.category
       %br
       %br
+      %hr
       
 
 
